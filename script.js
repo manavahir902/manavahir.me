@@ -186,11 +186,19 @@ for (let i = 0; i < packetCount; i++) {
 }
 
 /* mouse parallax */
-let mouseX = 0, mouseY = 0;
+let targetX = 0;
+let targetY = 0;
+
 wrap.addEventListener("mousemove", (e) => {
-  const r = wrap.getBoundingClientRect();
-  mouseX = (e.clientX - r.left) / r.width - 0.5;
-  mouseY = (e.clientY - r.top) / r.height - 0.5;
+  const rect = wrap.getBoundingClientRect();
+
+  targetX = ((e.clientX - rect.left) / rect.width - 0.5) * 2;
+  targetY = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
+});
+
+wrap.addEventListener("mouseleave", () => {
+  targetX = 0;
+  targetY = 0;
 });
 
 const clock = new THREE.Clock();
@@ -199,9 +207,25 @@ function animate() {
   const dt = clock.getDelta();
 
   if (!reducedMotion) {
-    group.rotation.y += dt * 0.18;
-    group.rotation.x += (mouseY * 0.4 - group.rotation.x) * 0.03;
-    group.rotation.y += (mouseX * 0.3) * 0.002;
+    // Continuous idle rotation
+group.rotation.y += dt * 0.12;
+
+// Mouse follow
+const desiredX = targetY * 1.5;
+const desiredY = targetX * 1.8;
+
+// Smooth interpolation
+group.rotation.x = THREE.MathUtils.lerp(
+  group.rotation.x,
+  desiredX,
+  0.10
+);
+
+group.rotation.y = THREE.MathUtils.lerp(
+  group.rotation.y,
+  group.rotation.y + (desiredY * 0.12),
+  0.10
+);
 
     packets.forEach((p) => {
       p.t += dt * p.speed;
