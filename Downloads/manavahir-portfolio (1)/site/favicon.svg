@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#0A0D0B"/>
+  <g stroke="#6FE7DD" stroke-width="1" opacity="0.9">
+    <line x1="16" y1="6" x2="26" y2="12"/>
+    <line x1="16" y1="6" x2="6" y2="12"/>
+    <line x1="16" y1="6" x2="16" y2="16"/>
+    <line x1="6" y1="12" x2="6" y2="20"/>
+    <line x1="26" y1="12" x2="26" y2="20"/>
+    <line x1="6" y1="20" x2="16" y2="26"/>
+    <line x1="26" y1="20" x2="16" y2="26"/>
+    <line x1="16" y1="16" x2="6" y2="20"/>
+    <line x1="16" y1="16" x2="26" y2="20"/>
+    <line x1="16" y1="16" x2="16" y2="26"/>
+  </g>
+  <circle cx="16" cy="6" r="2.1" fill="#FFB454"/>
+  <circle cx="26" cy="12" r="1.6" fill="#FFB454"/>
+  <circle cx="6" cy="12" r="1.6" fill="#FFB454"/>
+  <circle cx="16" cy="16" r="1.8" fill="#FFB454"/>
+  <circle cx="6" cy="20" r="1.6" fill="#FFB454"/>
+  <circle cx="26" cy="20" r="1.6" fill="#FFB454"/>
+  <circle cx="16" cy="26" r="1.8" fill="#FFB454"/>
+</svg>

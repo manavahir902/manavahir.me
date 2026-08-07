@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Manav Ahir" />
+  <title>Manav Ahir — Cloud &amp; DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Manav Ahir, Cloud & DevOps engineer building AWS infrastructure, CI/CD pipelines, and Linux systems. DevOps Trainee at Lakhu Teleservices." />
+  <meta property="og:title" content="Manav Ahir — Cloud & DevOps Engineer" />
+  <meta property="og:description" content="AWS infrastructure, Terraform, CI/CD and Linux systems — built and documented by Manav Ahir." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" />
+
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="./favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+  <meta name="theme-color" content="#0A0D0B" />
+
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a href="#top" class="nav-brand">
+        <span class="prompt">manav<span class="text-dim">@</span>ahmedabad<span class="text-dim">:~$</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about"><span class="text-dim">cd</span> ./about</a>
+        <a href="#experience"><span class="text-dim">cd</span> ./experience</a>
+        <a href="#projects"><span class="text-dim">cd</span> ./projects</a>
+        <a href="#skills"><span class="text-dim">cd</span> ./skills</a>
+        <a href="#education"><span class="text-dim">cd</span> ./education</a>
+        <a href="#contact" class="nav-cta"><span class="text-dim">./</span>contact.sh</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">$ whoami</p>
+        <h1 class="hero-title">Manav Ahir</h1>
+        <p class="hero-role"><span id="typewriter"></span><span class="cursor">_</span></p>
+        <p class="hero-desc">
+          I design, build and harden cloud infrastructure &mdash; VPCs, containers and CI/CD pipelines that
+          ship without downtime. Currently training as a DevOps engineer, deploying real client releases
+          on live infrastructure out of Ahmedabad, India.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-meta">
+          <a href="https://github.com/manavahir902" target="_blank" rel="noopener">github.com/manavahir902</a>
+          <span class="dot-sep">&middot;</span>
+          <a href="https://linkedin.com/in/manav-ahir902" target="_blank" rel="noopener">linkedin.com/in/manav-ahir902</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="terminal-frame">
+          <div class="terminal-bar">
+            <span class="live-dot"></span>
+            <span class="terminal-title">infra_topology.live</span>
+            <span class="terminal-status">ONLINE</span>
+          </div>
+          <div class="terminal-canvas-wrap">
+            <canvas id="netCanvas"></canvas>
+          </div>
+          <div class="terminal-log" id="terminalLog"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="eyebrow">$ cat about.md</p>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>
+          I'm a third-year Integrated M.Sc. IT student specializing in Cloud &amp; Application Development,
+          currently working as a DevOps Trainee at <strong>Lakhu Teleservices</strong>, where I troubleshoot
+          live deployment and infrastructure issues and ship code from GitHub into client production
+          environments.
+        </p>
+        <p>
+          Outside of client work I rebuild production-style cloud systems from the ground up to understand
+          exactly how the real pieces &mdash; VPCs, IAM, queues, containers &mdash; fit together, rather than
+          just reading about them.
+        </p>
+      </div>
+      <div class="strengths reveal">
+        <span class="chip">Fast learner</span>
+        <span class="chip">Troubleshooting mindset</span>
+        <span class="chip">Self-driven</span>
+        <span class="chip">Dependable teammate</span>
+        <span class="chip">Clear communicator</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <p class="eyebrow">$ cat experience.log</p>
+    <div class="log-entry reveal">
+      <div class="log-head">
+        <h3>DevOps Trainee</h3>
+        <span class="log-date">Aug 2026 &mdash; Present</span>
+      </div>
+      <p class="log-org">Lakhu Teleservices</p>
+      <ul class="log-list">
+        <li>Handle client-reported deployment and infrastructure issues, troubleshooting and resolving them in a live environment.</li>
+        <li>Pull application code from GitHub repositories and deploy it to client and production environments as part of the release workflow.</li>
+        <li>Support day-to-day DevOps operations, building hands-on experience with real deployment pipelines and client-facing infrastructure work.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="eyebrow">$ ls ~/projects</p>
+    <div class="project-card reveal">
+      <div class="project-head">
+        <div>
+          <h3>CloudCart Pro</h3>
+          <p class="project-sub">Production-pattern e-commerce backend on AWS</p>
+        </div>
+        <a href="https://github.com/manavahir902" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Source &rarr;</a>
+      </div>
+      <p class="project-desc">
+        An end-to-end AWS backend designed, built and deployed following real production architecture
+        patterns &mdash; from networking up through observability.
+      </p>
+      <div class="project-stats">
+        <div class="stat"><span class="stat-num">2</span><span class="stat-label">Availability Zones</span></div>
+        <div class="stat"><span class="stat-num">0</span><span class="stat-label">Downtime migration</span></div>
+        <div class="stat"><span class="stat-num">6</span><span class="stat-label">AWS services chained</span></div>
+      </div>
+      <ul class="log-list">
+        <li>Architected a custom VPC across 2 Availability Zones with public/private subnets, a NAT Gateway and least-privilege security groups; deployed RDS MySQL in private subnets with encryption at rest and transactional stock-locking on order placement.</li>
+        <li>Migrated live compute from EC2 with an Auto Scaling Group to containerized Docker services on ECS Fargate with zero downtime; implemented Cognito for managed registration, verification and login.</li>
+        <li>Decoupled order-confirmation emails from the request path with an SQS &rarr; Lambda &rarr; SES pipeline; built secure media handling with private S3, CloudFront and pre-signed upload URLs.</li>
+        <li>Hardened the stack with HTTPS via ACM, WAF managed rule groups with rate limiting, Secrets Manager for credentials, and IAM policies scoped to individual resource ARNs.</li>
+        <li>Set up observability with CloudWatch dashboards, SNS alarms and CloudTrail audit logging; automated build, push and deployment on every commit with CodePipeline and CodeBuild.</li>
+        <li>Codified core infrastructure as Terraform modules, validated through repeated apply and destroy cycles.</li>
+      </ul>
+      <div class="tag-row">
+        <span class="tag">VPC</span><span class="tag">ECS Fargate</span><span class="tag">RDS</span>
+        <span class="tag">Cognito</span><span class="tag">SQS/Lambda/SES</span><span class="tag">CloudFront</span>
+        <span class="tag">WAF</span><span class="tag">Terraform</span><span class="tag">CodePipeline</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <p class="eyebrow">$ cat skills.yaml</p>
+    <div class="yaml-block reveal">
+<pre><code><span class="yk">cloud_aws</span>:
+  <span class="yk">compute</span>: [<span class="yv">EC2 &amp; AMIs, ECS Fargate, Lambda</span>]
+  <span class="yk">network</span>: [<span class="yv">VPC, Security Groups, Route 53, ELB, CloudFront, ACM, WAF</span>]
+  <span class="yk">data</span>: [<span class="yv">S3, RDS-ready, EBS Snapshots</span>]
+  <span class="yk">messaging</span>: [<span class="yv">SQS, SES</span>]
+  <span class="yk">identity_ops</span>: [<span class="yv">IAM, Cognito, Secrets Manager, CloudWatch, CloudTrail</span>]
+  <span class="yk">delivery</span>: [<span class="yv">CodePipeline, CodeBuild</span>]
+  <span class="yk">exploring</span>: [<span class="yv">serverless patterns</span>]
+
+<span class="yk">iac_devops</span>: [<span class="yv">Terraform, Git &amp; GitHub, CI/CD, DevOps fundamentals (CALMS), Agile</span>]
+
+<span class="yk">linux</span>: [<span class="yv">RHEL/CentOS, user &amp; permission mgmt, ACL, SELinux, LVM, cron/at, RPM/YUM, SSH, NFS/FTP</span>]
+
+<span class="yk">windows_server_2016</span>: [<span class="yv">Active Directory, DNS, DHCP, GPO, Hyper-V, NLB, FSRM</span>]
+
+<span class="yk">networking</span>: [<span class="yv">TCP/IP, subnetting &amp; VLSM, VLANs, RIP/OSPF/EIGRP, Cisco IOS, ACL &amp; NAT</span>]
+
+<span class="yk">programming</span>:
+  <span class="yk">know</span>: [<span class="yv">C, C++, JavaScript</span>]
+  <span class="yk">learning</span>: [<span class="yv">Python, SQL</span>]
+
+<span class="yk">tools</span>: [<span class="yv">SNMP monitoring basics, MS Office / Google Workspace</span>]</code></pre>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <p class="eyebrow">$ cat education.log</p>
+    <div class="edu-grid">
+      <div class="log-entry reveal">
+        <div class="log-head">
+          <h3>Integrated M.Sc. IT</h3>
+          <span class="log-date">Aug 2024 &mdash; Present</span>
+        </div>
+        <p class="log-org">Cloud &amp; Application Development &middot; 3rd Year, Semester 5 &middot; SGPA 8.0 (Sem 2)</p>
+      </div>
+      <div class="log-entry reveal">
+        <div class="log-head">
+          <h3>Higher Secondary (HSC)</h3>
+          <span class="log-date">May 2023 &mdash; Mar 2024</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-grid">
+      <div class="reveal">
+        <p class="sub-label">$ cat certifications.txt</p>
+        <ul class="plain-list">
+          <li>Diploma in Programming &mdash; C, C++ &amp; JavaScript foundations, logic building and software development basics</li>
+        </ul>
+      </div>
+      <div class="reveal">
+        <p class="sub-label">$ ls coursework/</p>
+        <div class="tag-row">
+          <span class="tag">Linux Essentials &amp; Admin</span>
+          <span class="tag">Server Admin I &amp; II</span>
+          <span class="tag">Network Essentials</span>
+          <span class="tag">Routing &amp; Switching</span>
+          <span class="tag">Public Cloud-I (AWS)</span>
+          <span class="tag">Intro to Cloud Computing</span>
+          <span class="tag">DevOps Foundation &amp; Git</span>
+          <span class="tag">Network Monitoring (SNMP)</span>
+          <span class="tag">Wireless Security</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="sub-label">$ cat languages.txt</p>
+        <ul class="plain-list">
+          <li>Gujarati &mdash; Native</li>
+          <li>Hindi &mdash; Fluent</li>
+          <li>English &mdash; Professional working proficiency</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <p class="eyebrow">$ ./contact.sh</p>
+    <div class="contact-panel reveal">
+      <h2>Let's build something that stays up.</h2>
+      <p class="contact-desc">Open to DevOps, Cloud and infrastructure roles &mdash; and to conversations about either.</p>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:manavahir902@gmail.com">
+          <span class="contact-label">email</span>
+          <span class="contact-value">manavahir902@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+919664753943">
+          <span class="contact-label">phone</span>
+          <span class="contact-value">+91 96647 53943</span>
+        </a>
+        <a class="contact-item" href="https://linkedin.com/in/manav-ahir902" target="_blank" rel="noopener">
+          <span class="contact-label">linkedin</span>
+          <span class="contact-value">/in/manav-ahir902</span>
+        </a>
+        <a class="contact-item" href="https://github.com/manavahir902" target="_blank" rel="noopener">
+          <span class="contact-label">github</span>
+          <span class="contact-value">/manavahir902</span>
+        </a>
+        <div class="contact-item contact-item-static">
+          <span class="contact-label">location</span>
+          <span class="contact-value">Ahmedabad, Gujarat, India</span>
+        </div>
+      </div>
+      <a href="mailto:manavahir902@gmail.com" class="btn btn-primary btn-lg">Send an email</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>&copy; <span id="year"></span> Manav Ahir</span>
+    <span class="text-dim">Built from scratch &middot; deployed on GitHub Pages</span>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
